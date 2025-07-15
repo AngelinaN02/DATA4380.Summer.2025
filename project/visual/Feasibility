@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "25083bcc-c7f1-4ee7-96ce-9abe6904d0ee",
+   "metadata": {},
+   "source": [
+    "## **Overview**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f544a96a-8210-465b-8285-4fffa1112f08",
+   "metadata": {},
+   "source": [
+    "This project aims to investigate how visual domain adaptation works between real and stylized (cartoon-like) images. Using an open-source dataset (CIFAR-10) and cartoon-style filters, I will simulate a \"SpongeBob-inspired\" visual style and explore how deep learning models handle classification or domain generalization under these style shifts."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a691d404-d581-4210-84b3-07b8604bf36f",
+   "metadata": {},
+   "source": [
+    "# **Feasibility**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dba58316-f5e1-44c5-b6c4-4cea3b0c606d",
+   "metadata": {},
+   "source": [
+    "## **Dataset Availability**\n",
+    "- The project uses CIFAR-10, a public dataset available through PyTorch\n",
+    "- It contains 60,000 labeled images across 10 common categories (e.g., cat, car, dog)\n",
+    "- No copyright issues exist; all data is free and legally usable\n",
+    "- Stylized versions will be created using OpenCV's image filitering tools to simulate cartoon features.\n",
+    "\n",
+    "## **Technical Tools**\n",
+    "- The project will be implemented in **Python** using **Jupyter Notebook**\n",
+    "- Core libraries include:\n",
+    "    - `torch` and `torchvision` for model training and dataset access\n",
+    "    - `OpenCV` and `PIL` for cartoon-style filitering\n",
+    "    - `matplotlib` for visualization\n",
+    "- These tools are open-source and fully compatibile with both local and cloud environments.\n",
+    "\n",
+    "## **Hardware and Compute Needs**\n",
+    "- CIFAR-10 images are small (32×32 pixels), making them very efficient to process.\n",
+    "- Training models like ResNet18 with transfer learning is possible on a standard laptop\n",
+    "- No high-performance computing is required.\n",
+    "\n",
+    "## **Challenge Level**\n",
+    "- The project explores domain adaptation, an active research topic in computer vision.\n",
+    "\n",
+    "- It includes both a technical component (deep learning model training) and an experimental design (cross-domain evaluation).\n",
+    "\n",
+    "- The stylization task introduces variability and tests generalization, adding depth and rigor beyond basic classification."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
